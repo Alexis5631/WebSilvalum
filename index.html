@@ -7,16 +7,31 @@
     <link rel="stylesheet" href="/src/css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="site-header">
       <nav class="navbar" aria-label="Navegación principal">
-        <a class="logo" href="#inicio" aria-label="Silvalum inicio">Silvalum</a>
-        <ul class="menu">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#catalogo">Catálogo</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+        <a class="nav-logo" href="#inicio" aria-label="Silvalum inicio">Silvalum</a>
+
+        <ul class="nav-menu" id="nav-menu" role="list">
+          <li><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li><a class="nav-link" href="#catalogo">Catálogo</a></li>
+          <li><a class="nav-link" href="#contacto">Contacto</a></li>
         </ul>
-        <a class="btn btn-primary" href="#contacto">Cotizar</a>
+
+        <div class="nav-actions">
+          <a class="btn btn-primary" href="#contacto">Cotizar</a>
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+          >
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
       </nav>
     </header>
 
