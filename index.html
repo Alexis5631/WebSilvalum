@@ -3,31 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Silvalum | Vidriería</title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>Silvalum — Vidrio & Aluminio Arquitectónico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/src/css/styles.css" />
   </head>
   <body>
-    <header class="site-header">
+
+    <!-- ── Nav ───────────────────────────────────────── -->
+    <header class="site-header" id="site-header">
       <nav class="navbar" aria-label="Navegación principal">
-        <a class="nav-logo" href="#inicio" aria-label="Silvalum inicio">Silvalum</a>
+        <a class="nav-logo" href="#inicio" aria-label="Silvalum inicio">
+          <span class="logo-mark">S</span>ilvalum
+        </a>
 
         <ul class="nav-menu" id="nav-menu" role="list">
           <li><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li><a class="nav-link" href="#vision">Visión</a></li>
           <li><a class="nav-link" href="#servicios">Servicios</a></li>
-          <li><a class="nav-link" href="#catalogo">Catálogo</a></li>
+          <li><a class="nav-link" href="#proyectos">Proyectos</a></li>
           <li><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-menu-cta">
+            <a class="btn btn-gold" href="#contacto">Agendar visita</a>
+          </li>
         </ul>
 
         <div class="nav-actions">
-          <a class="btn btn-primary" href="#contacto">Cotizar</a>
-          <button
-            class="hamburger"
-            id="hamburger"
-            aria-label="Abrir menú"
-            aria-expanded="false"
-            aria-controls="nav-menu"
-          >
-            <span class="hamburger-line"></span>
+          <a class="btn btn-nav" href="#contacto">Agendar visita</a>
+          <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
             <span class="hamburger-line"></span>
             <span class="hamburger-line"></span>
           </button>
@@ -36,124 +41,130 @@
     </header>
 
     <main>
+
+      <!-- ── Hero ──────────────────────────────────── -->
       <section id="inicio" class="hero" aria-labelledby="hero-title">
-        <div class="hero-card">
-          <span class="hero-kicker">Silvalum · Vidrio & Aluminio</span>
-          <h1 id="hero-title">Soluciones premium en vidrio y aluminio para espacios modernos</h1>
-          <p>
-            Diseñamos, fabricamos e instalamos proyectos residenciales y comerciales
-            con acabados de alta calidad, seguridad y estilo.
+        <div class="hero-bg">
+          <video
+            class="hero-bg-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+            poster="https://images.unsplash.com/photo-1600607687939-ce8a6a8e4161?w=1800&q=85"
+          >
+            <source src="/hero-video.mp4" type="video/mp4" />
+          </video>
+          <img
+            src="https://images.unsplash.com/photo-1600607687939-ce8a6a8e4161?w=1800&q=85"
+            alt="Espacio moderno con vidrio arquitectónico"
+            class="hero-bg-img"
+          />
+        </div>
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-content">
+          <span class="hero-eyebrow hero-anim" data-hero-delay="1">Vidrio & aluminio arquitectónico</span>
+          <h1 id="hero-title">
+            <span class="hero-anim" data-hero-delay="2">Imagina tu espacio</span><br />
+            <em class="hero-anim" data-hero-delay="3">del futuro</em>
+          </h1>
+          <p class="hero-anim" data-hero-delay="4">
+            Transformamos ideas en espacios reales con acabados de vidrio y aluminio
+            que conectan tu hogar con la luz, la modernidad y el diseño.
           </p>
-          <div class="hero-actions">
-            <a class="btn btn-cta" href="#contacto">Solicitar Cotización</a>
-            <a class="btn btn-outline" href="#catalogo">Ver Catálogo</a>
+          <div class="hero-actions hero-anim" data-hero-delay="5">
+            <a class="btn btn-gold" href="#contacto">Solicitar cotización</a>
+            <a class="btn btn-ghost" href="#servicios">Explorar servicios</a>
           </div>
+        </div>
+        <div class="hero-scroll-hint hero-anim" data-hero-delay="6" aria-hidden="true">
+          <span></span>
         </div>
       </section>
 
-      <!-- ── Servicios ───────────────────────────────────────────── -->
+      <!-- ── Vision statement ─────────────────────── -->
+      <section id="vision" class="vision reveal">
+        <div class="vision-inner">
+          <span class="section-eyebrow">Nuestra filosofía</span>
+          <blockquote>
+            Cada espacio merece la transparencia del vidrio y la precisión del aluminio.
+            <br />Diseñamos pensando en <em>cómo vivirás mañana</em>.
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- ── Servicios ────────────────────────────── -->
       <section id="servicios" class="services" aria-labelledby="services-title">
         <div class="services-inner">
-          <div class="section-header">
-            <span class="section-kicker">Lo que hacemos</span>
-            <h2 id="services-title">Nuestros Servicios</h2>
-            <p>Soluciones integrales en vidrio y aluminio con acabados de alta calidad para cada proyecto.</p>
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Lo que hacemos</span>
+            <h2 id="services-title">Servicios</h2>
+            <p>Soluciones de vidrio y aluminio pensadas para el futuro de tu espacio.</p>
           </div>
 
           <div class="services-grid">
 
-            <!-- Tarjeta 1 -->
-            <article class="service-card">
+            <article class="service-card reveal">
               <div class="card-image-wrap">
-                <img
-                  src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=700&q=85"
-                  alt="Ventanas de vidrio modernas"
-                  class="card-img"
-                  loading="lazy"
-                />
+                <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=700&q=85" alt="Ventanas de vidrio modernas" class="card-img" loading="lazy" />
                 <div class="card-overlay" aria-hidden="true"></div>
               </div>
               <div class="card-body">
-                <span class="card-tag">Vidrio templado</span>
+                <span class="card-number" aria-hidden="true">01</span>
                 <h3>Ventanas de Vidrio</h3>
-                <p>Fabricación e instalación con máximo aislamiento térmico y acústico para hogares y oficinas.</p>
-                <a class="card-link" href="#contacto" aria-label="Cotizar ventanas de vidrio">
-                  Cotizar ahora
-                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M3 8h10"/><path d="M9 4l4 4-4 4"/>
-                  </svg>
+                <p>Aislamiento térmico y acústico superior. Vidrio templado y laminado para máxima seguridad.</p>
+                <a class="card-link" href="#contacto">
+                  Cotizar
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
                 </a>
               </div>
             </article>
 
-            <!-- Tarjeta 2 -->
-            <article class="service-card">
+            <article class="service-card reveal">
               <div class="card-image-wrap">
-                <img
-                  src="https://images.unsplash.com/photo-1600607687939-ce8a6a8e4161?w=700&q=85"
-                  alt="Puertas corredizas de vidrio"
-                  class="card-img"
-                  loading="lazy"
-                />
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6a8e4161?w=700&q=85" alt="Puertas corredizas de vidrio" class="card-img" loading="lazy" />
                 <div class="card-overlay" aria-hidden="true"></div>
               </div>
               <div class="card-body">
-                <span class="card-tag">Aluminio & Vidrio</span>
+                <span class="card-number" aria-hidden="true">02</span>
                 <h3>Puertas Corredizas</h3>
-                <p>Alta resistencia e instalación profesional para terrazas, balcones y espacios interiores.</p>
-                <a class="card-link" href="#contacto" aria-label="Cotizar puertas corredizas">
-                  Cotizar ahora
-                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M3 8h10"/><path d="M9 4l4 4-4 4"/>
-                  </svg>
+                <p>Sistemas corredizos de alta resistencia para terrazas, balcones y espacios interiores.</p>
+                <a class="card-link" href="#contacto">
+                  Cotizar
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
                 </a>
               </div>
             </article>
 
-            <!-- Tarjeta 3 -->
-            <article class="service-card">
+            <article class="service-card reveal">
               <div class="card-image-wrap">
-                <img
-                  src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=700&q=85"
-                  alt="Mampara de baño en vidrio"
-                  class="card-img"
-                  loading="lazy"
-                />
+                <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=700&q=85" alt="Mampara de baño en vidrio" class="card-img" loading="lazy" />
                 <div class="card-overlay" aria-hidden="true"></div>
               </div>
               <div class="card-body">
-                <span class="card-tag">Diseño interior</span>
+                <span class="card-number" aria-hidden="true">03</span>
                 <h3>Mamparas de Baño</h3>
-                <p>Mamparas de ducha en vidrio templado con perfiles de aluminio anodizado. Elegantes y fáciles de mantener.</p>
-                <a class="card-link" href="#contacto" aria-label="Cotizar mamparas de baño">
-                  Cotizar ahora
-                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M3 8h10"/><path d="M9 4l4 4-4 4"/>
-                  </svg>
+                <p>Vidrio templado con perfiles de aluminio anodizado. Elegancia y practicidad para tu baño.</p>
+                <a class="card-link" href="#contacto">
+                  Cotizar
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
                 </a>
               </div>
             </article>
 
-            <!-- Tarjeta 4 -->
-            <article class="service-card">
+            <article class="service-card reveal">
               <div class="card-image-wrap">
-                <img
-                  src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=700&q=85"
-                  alt="Fachada de vidrio corporativa"
-                  class="card-img"
-                  loading="lazy"
-                />
+                <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=700&q=85" alt="Fachada de vidrio corporativa" class="card-img" loading="lazy" />
                 <div class="card-overlay" aria-hidden="true"></div>
               </div>
               <div class="card-body">
-                <span class="card-tag">Proyectos comerciales</span>
-                <h3>Fachadas y Cerramientos</h3>
-                <p>Fachadas de vidrio y aluminio para edificios residenciales y comerciales con alta eficiencia y diseño moderno.</p>
-                <a class="card-link" href="#contacto" aria-label="Cotizar fachadas y cerramientos">
-                  Cotizar ahora
-                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M3 8h10"/><path d="M9 4l4 4-4 4"/>
-                  </svg>
+                <span class="card-number" aria-hidden="true">04</span>
+                <h3>Fachadas & Cerramientos</h3>
+                <p>Proyectos de fachada integral para edificaciones residenciales y comerciales de alto nivel.</p>
+                <a class="card-link" href="#contacto">
+                  Cotizar
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
                 </a>
               </div>
             </article>
@@ -161,7 +172,115 @@
           </div>
         </div>
       </section>
+
+      <!-- ── Proyectos ───────────────────────────── -->
+      <section id="proyectos" class="projects" aria-labelledby="projects-title">
+        <div class="projects-inner">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Portafolio</span>
+            <h2 id="projects-title">Proyectos</h2>
+            <p>Espacios que reflejan nuestra visión del vidrio y el aluminio arquitectónico.</p>
+          </div>
+
+          <div class="projects-grid">
+
+            <article class="project-item reveal">
+              <div class="project-image-wrap">
+                <img src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=900&q=85" alt="Fachada residencial de vidrio" class="project-img" loading="lazy" />
+                <div class="project-overlay">
+                  <div class="project-info">
+                    <span class="project-type">Residencial</span>
+                    <h3 class="project-name">Casa Mirador</h3>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-item reveal">
+              <div class="project-image-wrap">
+                <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=85" alt="Torre corporativa con fachada de vidrio" class="project-img" loading="lazy" />
+                <div class="project-overlay">
+                  <div class="project-info">
+                    <span class="project-type">Comercial</span>
+                    <h3 class="project-name">Torre Lumen</h3>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-item reveal">
+              <div class="project-image-wrap">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6a8e4161?w=900&q=85" alt="Interior moderno con muros de vidrio" class="project-img" loading="lazy" />
+                <div class="project-overlay">
+                  <div class="project-info">
+                    <span class="project-type">Residencial</span>
+                    <h3 class="project-name">Residencia Ámbar</h3>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-item reveal">
+              <div class="project-image-wrap">
+                <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=900&q=85" alt="Cerramiento de vidrio premium" class="project-img" loading="lazy" />
+                <div class="project-overlay">
+                  <div class="project-info">
+                    <span class="project-type">Residencial</span>
+                    <h3 class="project-name">Villa Cristal</h3>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-item reveal">
+              <div class="project-image-wrap">
+                <img src="https://images.unsplash.com/photo-1577985043696-8bd54d9c4f9c?w=900&q=85" alt="Edificio moderno con vidrio estructural" class="project-img" loading="lazy" />
+                <div class="project-overlay">
+                  <div class="project-info">
+                    <span class="project-type">Comercial</span>
+                    <h3 class="project-name">Centro Axis</h3>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-item reveal">
+              <div class="project-image-wrap">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=85" alt="Residencia contemporánea con vidrio" class="project-img" loading="lazy" />
+                <div class="project-overlay">
+                  <div class="project-info">
+                    <span class="project-type">Residencial</span>
+                    <h3 class="project-name">Casa Horizonte</h3>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ── CTA Final ────────────────────────────── -->
+      <section id="contacto" class="cta-section reveal">
+        <div class="cta-inner">
+          <span class="section-eyebrow">Da el primer paso</span>
+          <h2>¿Listo para transformar tu espacio?</h2>
+          <p>Agenda una visita sin compromiso. Te asesoramos para que cada detalle de vidrio y aluminio sea exactamente como lo imaginaste.</p>
+          <a class="btn btn-gold btn-lg" href="https://wa.me/549XXXXXXXXXX?text=Hola%20Silvalum%2C%20quiero%20cotizar%20un%20proyecto" target="_blank" rel="noopener">
+            Contactar por WhatsApp
+          </a>
+        </div>
+      </section>
+
     </main>
+
+    <!-- ── Footer ───────────────────────────────── -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span class="footer-brand">Silvalum</span>
+        <span class="footer-copy">&copy; 2026 — Vidrio & aluminio arquitectónico</span>
+      </div>
+    </footer>
 
     <script type="module" src="/src/js/main.js"></script>
   </body>
