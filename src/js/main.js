@@ -90,3 +90,11 @@ if ('ontouchstart' in window || matchMedia('(hover: none)').matches) {
     }
   });
 }
+
+// WhatsApp button
+const whatsappBtn = document.getElementById('whatsapp-btn');
+if (whatsappBtn) {
+  const phoneNumber = '573015788474';
+  const message = 'Hola Silvalum, quiero cotizar un proyecto.';
+  whatsappBtn.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+}
