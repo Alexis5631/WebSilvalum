@@ -41,6 +41,14 @@ if (header) {
   onScroll();
 }
 
+// Hero cinematic entrance sequence
+const heroAnims = document.querySelectorAll('.hero-anim');
+if (heroAnims.length) {
+  requestAnimationFrame(() => {
+    heroAnims.forEach((el) => el.classList.add('is-visible'));
+  });
+}
+
 // Scroll reveal (IntersectionObserver)
 const reveals = document.querySelectorAll('.reveal');
 if (reveals.length) {
