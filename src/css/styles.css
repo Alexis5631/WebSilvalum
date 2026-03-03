@@ -850,7 +850,15 @@ main,
 
 /* ── Mobile: video fallback ── */
 @media (max-width: 768px) {
-  .hero-bg-video { display: none; }
+  .hero-bg-video {
+    display: none;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+  }
   .hero-bg-img {
     display: block;
     position: absolute;
