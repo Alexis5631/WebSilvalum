@@ -1,5 +1,11 @@
 ﻿//  Silvalum  Main 
 
+// Force scroll to top on page load
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+window.scrollTo(0, 0);
+
 // Navbar toggle
 const hamburger = document.getElementById('hamburger');
 const navMenu   = document.getElementById('nav-menu');
@@ -64,4 +70,23 @@ if (reveals.length) {
     { threshold: 0.15 }
   );
   reveals.forEach((el) => observer.observe(el));
+}
+
+// Project cards — touch tap for mobile
+if ('ontouchstart' in window || matchMedia('(hover: none)').matches) {
+  const projects = document.querySelectorAll('.project-item');
+
+  projects.forEach((card) => {
+    card.addEventListener('click', (e) => {
+      const wasActive = card.classList.contains('active');
+      projects.forEach((c) => c.classList.remove('active'));
+      if (!wasActive) card.classList.add('active');
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.project-item')) {
+      projects.forEach((c) => c.classList.remove('active'));
+    }
+  });
 }
