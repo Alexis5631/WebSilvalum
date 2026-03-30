@@ -3,36 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Silvalum diseña, fabrica e instala soluciones de vidrio y aluminio a medida para espacios residenciales y comerciales."
+    />
     <link rel="icon" type="image/png" href="/favicon.png" />
-    <title>Silvalum — Vidrio & Aluminio Arquitectónico</title>
+    <title>Silvalum — Vidrio y aluminio a medida</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/src/css/styles.css" />
   </head>
   <body>
-
-    <!-- ── Nav ───────────────────────────────────────── -->
     <header class="site-header" id="site-header">
       <nav class="navbar" aria-label="Navegación principal">
         <a class="nav-logo" href="#inicio" aria-label="Silvalum inicio">
-          <span class="logo-mark">S</span>ilvalum
+          <span class="logo-mark">S</span>
+          <span>Silvalum</span>
         </a>
 
         <ul class="nav-menu" id="nav-menu" role="list">
           <li><a class="nav-link" href="#inicio">Inicio</a></li>
-          <li><a class="nav-link" href="#vision">Visión</a></li>
-          <li><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li><a class="nav-link" href="#servicios">Soluciones</a></li>
+          <li><a class="nav-link" href="#proceso">Proceso</a></li>
           <li><a class="nav-link" href="#proyectos">Proyectos</a></li>
           <li><a class="nav-link" href="#contacto">Contacto</a></li>
           <li class="nav-menu-cta">
-            <a class="btn btn-gold" href="#contacto">Agendar visita</a>
+            <a class="btn btn-gold" href="#contacto">Pedir cotización</a>
           </li>
         </ul>
 
         <div class="nav-actions">
-          <a class="btn btn-nav" href="#contacto">Agendar visita</a>
-          <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+          <a class="btn btn-nav" href="#contacto">Pedir cotización</a>
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+          >
             <span class="hamburger-line"></span>
             <span class="hamburger-line"></span>
           </button>
@@ -41,8 +53,6 @@
     </header>
 
     <main>
-
-      <!-- ── Hero ──────────────────────────────────── -->
       <section id="inicio" class="hero" aria-labelledby="hero-title">
         <div class="hero-bg">
           <video
@@ -57,223 +67,434 @@
             <source src="/video-hero.mp4" type="video/mp4" />
           </video>
         </div>
+        <div class="hero-blueprint" aria-hidden="true"></div>
         <div class="hero-glow" aria-hidden="true"></div>
-        <div class="hero-content">
-          <span class="hero-eyebrow hero-anim" data-hero-delay="1">Vidrio & aluminio arquitectónico</span>
-          <h1 id="hero-title">
-            <span class="hero-anim" data-hero-delay="2">Imagina tu espacio</span><br />
-            <em class="hero-anim" data-hero-delay="3">del futuro</em>
-          </h1>
-          <p class="hero-anim" data-hero-delay="4">
-            Transformamos ideas en espacios reales con acabados de vidrio y aluminio
-            que conectan tu hogar con la luz, la modernidad y el diseño.
-          </p>
-          <div class="hero-actions hero-anim" data-hero-delay="5">
-            <a class="btn btn-gold" href="#contacto">Solicitar cotización</a>
-            <a class="btn btn-ghost" href="#servicios">Explorar servicios</a>
+
+        <div class="hero-shell">
+          <div class="hero-copy">
+            <span class="hero-eyebrow hero-anim" data-hero-delay="1">
+              Vidrio y aluminio a medida
+            </span>
+            <h1 id="hero-title">
+              <span class="hero-anim" data-hero-delay="2">Diseñamos cerramientos</span>
+              <em class="hero-anim" data-hero-delay="3">que amplían la luz</em>
+            </h1>
+            <p class="hero-anim" data-hero-delay="4">
+              Transformamos hogares, locales y fachadas con soluciones de vidrio y aluminio
+              que se ven limpias, funcionan bien y elevan la percepción de cada espacio.
+            </p>
+            <div class="hero-actions hero-anim" data-hero-delay="5">
+              <a class="btn btn-gold" href="#contacto">Cotizar por WhatsApp</a>
+              <a class="btn btn-ghost" href="#proyectos">Ver proyectos</a>
+            </div>
+            <ul class="hero-points hero-anim" data-hero-delay="6" role="list">
+              <li>Residencial, comercial y proyectos especiales</li>
+              <li>Asesoría, medición, fabricación e instalación</li>
+              <li>Detalles limpios y soluciones ajustadas al espacio real</li>
+            </ul>
           </div>
+
+          <aside class="hero-panel hero-anim" data-hero-delay="5" aria-label="Resumen del servicio">
+            <div class="hero-panel-top">
+              <span class="panel-kicker">Guía de proyecto</span>
+              <h2>Una ruta clara desde la idea inicial hasta la instalación.</h2>
+            </div>
+
+            <div class="hero-panel-flow">
+              <article class="flow-item">
+                <span class="flow-step">01</span>
+                <div>
+                  <strong>Escuchamos el uso del espacio</strong>
+                  <p>Entendemos necesidades, aperturas, luz, privacidad y estilo.</p>
+                </div>
+              </article>
+              <article class="flow-item">
+                <span class="flow-step">02</span>
+                <div>
+                  <strong>Definimos la solución adecuada</strong>
+                  <p>Proponemos sistema, perfilería y acabados según el proyecto.</p>
+                </div>
+              </article>
+              <article class="flow-item">
+                <span class="flow-step">03</span>
+                <div>
+                  <strong>Instalamos con lectura limpia</strong>
+                  <p>Buscamos precisión visual y una entrega final bien resuelta.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="hero-materials" aria-label="Materiales y soluciones">
+              <span>Vidrio templado</span>
+              <span>Perfilería de aluminio</span>
+              <span>Puertas corredizas</span>
+              <span>Fachadas y cerramientos</span>
+            </div>
+          </aside>
         </div>
+
         <div class="hero-scroll-hint hero-anim" data-hero-delay="6" aria-hidden="true">
           <span></span>
         </div>
       </section>
 
-      <!-- ── Vision statement ─────────────────────── -->
-      <section id="vision" class="vision reveal">
-        <div class="vision-inner">
-          <span class="section-eyebrow">Nuestra filosofía</span>
-          <blockquote>
-            Cada espacio merece la transparencia del vidrio y la precisión del aluminio.
-            <br />Diseñamos pensando en <em>cómo vivirás mañana</em>.
-          </blockquote>
+      <section class="proof-band" aria-label="Criterios de trabajo">
+        <div class="proof-band-inner">
+          <article class="proof-card reveal">
+            <span class="proof-label">Lo que priorizamos</span>
+            <h2>Luz, orden visual y sensación de amplitud.</h2>
+            <p>
+              No se trata solo de cerrar un espacio: buscamos que el resultado se sienta
+              mejor habitado.
+            </p>
+          </article>
+          <article class="proof-card reveal">
+            <span class="proof-label">Cómo operamos</span>
+            <h2>Diagnóstico, fabricación e instalación.</h2>
+            <p>
+              Aterrizamos cada proyecto con una ruta clara para reducir fricción y dudas en obra.
+            </p>
+          </article>
+          <article class="proof-card reveal">
+            <span class="proof-label">Dónde aportamos valor</span>
+            <h2>Hogares, baños, terrazas, locales y fachadas.</h2>
+            <p>
+              Diseñamos soluciones versátiles para espacios que necesitan verse más limpios y actuales.
+            </p>
+          </article>
+          <article class="proof-card reveal">
+            <span class="proof-label">Qué buscamos al final</span>
+            <h2>Un acabado sobrio, funcional y bien resuelto.</h2>
+            <p>
+              Cuidamos lectura arquitectónica, proporciones y la relación entre material y espacio.
+            </p>
+          </article>
         </div>
       </section>
 
-      <!-- ── Servicios ────────────────────────────── -->
-      <section id="servicios" class="services" aria-labelledby="services-title">
-        <div class="services-inner">
+      <section id="servicios" class="solutions" aria-labelledby="solutions-title">
+        <div class="section-frame">
+          <div class="section-header section-header--split reveal">
+            <div>
+              <span class="section-eyebrow">Soluciones</span>
+              <h2 id="solutions-title">
+                Propuestas pensadas para vivir, trabajar y mostrar mejor cada ambiente.
+              </h2>
+            </div>
+            <p>
+              Organizamos el portafolio para que se entienda rápido qué tipo de solución puedes
+              resolver con Silvalum y en qué espacios tiene más impacto.
+            </p>
+          </div>
+
+          <div class="solutions-grid">
+            <article class="solution-card solution-card--featured reveal">
+              <div class="card-image-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=1100&q=85"
+                  alt="Ventanales de vidrio para una vivienda moderna"
+                  class="card-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <div class="card-meta">
+                  <span class="card-number">01</span>
+                  <span class="card-badge">Luz y amplitud</span>
+                </div>
+                <h3>Ventanas y paños fijos que ordenan la fachada.</h3>
+                <p>
+                  Sistemas pensados para mejorar entrada de luz, lectura exterior y confort
+                  visual en proyectos residenciales y comerciales.
+                </p>
+                <div class="card-tags" aria-label="Características">
+                  <span>Vidrio templado</span>
+                  <span>Control visual</span>
+                  <span>Mayor apertura</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="solution-card reveal">
+              <div class="card-image-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1600607687939-ce8a6a8e4161?w=900&q=85"
+                  alt="Puerta corrediza conectando interior y exterior"
+                  class="card-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <div class="card-meta">
+                  <span class="card-number">02</span>
+                  <span class="card-badge">Conexión interior-exterior</span>
+                </div>
+                <h3>Puertas corredizas para integrar terraza, balcón o sala.</h3>
+                <p>
+                  Aperturas amplias y limpias para proyectos que necesitan circulación fluida y
+                  una presencia más contemporánea.
+                </p>
+                <div class="card-tags" aria-label="Características">
+                  <span>Deslizamiento suave</span>
+                  <span>Terrazas</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="solution-card reveal">
+              <div class="card-image-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=900&q=85"
+                  alt="Mampara de baño en vidrio con perfilería fina"
+                  class="card-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <div class="card-meta">
+                  <span class="card-number">03</span>
+                  <span class="card-badge">Baños más limpios</span>
+                </div>
+                <h3>Mamparas y divisiones con lectura visual ligera.</h3>
+                <p>
+                  Soluciones funcionales para baños e interiores donde el detalle del acabado hace
+                  la diferencia.
+                </p>
+                <div class="card-tags" aria-label="Características">
+                  <span>Perfilería fina</span>
+                  <span>Fácil mantenimiento</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="solution-card reveal">
+              <div class="card-image-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=85"
+                  alt="Fachada comercial con vidrio y aluminio"
+                  class="card-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <div class="card-meta">
+                  <span class="card-number">04</span>
+                  <span class="card-badge">Escala comercial</span>
+                </div>
+                <h3>Fachadas y cerramientos para espacios de mayor exposición.</h3>
+                <p>
+                  Diseñamos soluciones que ayudan a ordenar la envolvente y proyectar una imagen más
+                  sólida del negocio o edificio.
+                </p>
+                <div class="card-tags" aria-label="Características">
+                  <span>Comercial</span>
+                  <span>Cerramiento integral</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="craft" aria-labelledby="craft-title">
+        <div class="section-frame craft-shell">
+          <div class="craft-intro reveal">
+            <span class="section-eyebrow">Enfoque</span>
+            <h2 id="craft-title">
+              Más que instalar vidrio: definimos cómo debe sentirse el espacio cuando queda terminado.
+            </h2>
+            <p>
+              La intención visual importa tanto como el sistema. Por eso nuestra propuesta mezcla
+              criterio funcional, proporción, limpieza y lectura arquitectónica.
+            </p>
+          </div>
+
+          <div class="craft-grid">
+            <article class="craft-card reveal">
+              <span class="craft-index">A</span>
+              <h3>Precisión en medidas</h3>
+              <p>La solución correcta empieza por entender el lugar tal como existe.</p>
+            </article>
+            <article class="craft-card reveal">
+              <span class="craft-index">B</span>
+              <h3>Materiales que dialogan</h3>
+              <p>Vidrio, perfilería y acabados se eligen para verse coherentes entre sí.</p>
+            </article>
+            <article class="craft-card reveal">
+              <span class="craft-index">C</span>
+              <h3>Instalación con criterio</h3>
+              <p>Buscamos que el montaje se perciba limpio, estable y bien rematado.</p>
+            </article>
+            <article class="craft-card reveal">
+              <span class="craft-index">D</span>
+              <h3>Resultados que elevan el ambiente</h3>
+              <p>El objetivo final es que el espacio se vea mejor y funcione mejor.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="proceso" class="process" aria-labelledby="process-title">
+        <div class="section-frame">
           <div class="section-header reveal">
-            <span class="section-eyebrow">Lo que hacemos</span>
-            <h2 id="services-title">Servicios</h2>
-            <p>Soluciones de vidrio y aluminio pensadas para el futuro de tu espacio.</p>
+            <span class="section-eyebrow">Proceso</span>
+            <h2 id="process-title">Una secuencia clara para aterrizar el proyecto sin improvisar.</h2>
+            <p>
+              Esta sección le da confianza al visitante porque explica cómo se avanza desde la
+              consulta inicial hasta la entrega final.
+            </p>
           </div>
 
-          <div class="services-grid">
-
-            <article class="service-card reveal">
-              <div class="card-image-wrap">
-                <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=700&q=85" alt="Ventanas de vidrio modernas" class="card-img" loading="lazy" />
-                <div class="card-overlay" aria-hidden="true"></div>
-              </div>
-              <div class="card-body">
-                <span class="card-number" aria-hidden="true">01</span>
-                <h3>Ventanas de Vidrio</h3>
-                <p>Aislamiento térmico y acústico superior. Vidrio templado y laminado para máxima seguridad.</p>
-                <a class="card-link" href="#contacto">
-                  Cotizar
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
-                </a>
-              </div>
+          <div class="process-grid">
+            <article class="process-step reveal">
+              <span class="process-number">01</span>
+              <h3>Visita y diagnóstico</h3>
+              <p>Revisamos medidas, circulación, uso del espacio y los puntos críticos del proyecto.</p>
             </article>
-
-            <article class="service-card reveal">
-              <div class="card-image-wrap">
-                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6a8e4161?w=700&q=85" alt="Puertas corredizas de vidrio" class="card-img" loading="lazy" />
-                <div class="card-overlay" aria-hidden="true"></div>
-              </div>
-              <div class="card-body">
-                <span class="card-number" aria-hidden="true">02</span>
-                <h3>Puertas Corredizas</h3>
-                <p>Sistemas corredizos de alta resistencia para terrazas, balcones y espacios interiores.</p>
-                <a class="card-link" href="#contacto">
-                  Cotizar
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
-                </a>
-              </div>
+            <article class="process-step reveal">
+              <span class="process-number">02</span>
+              <h3>Propuesta de solución</h3>
+              <p>Definimos tipo de sistema, materiales y una dirección visual coherente con el lugar.</p>
             </article>
-
-            <article class="service-card reveal">
-              <div class="card-image-wrap">
-                <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=700&q=85" alt="Mampara de baño en vidrio" class="card-img" loading="lazy" />
-                <div class="card-overlay" aria-hidden="true"></div>
-              </div>
-              <div class="card-body">
-                <span class="card-number" aria-hidden="true">03</span>
-                <h3>Mamparas de Baño</h3>
-                <p>Vidrio templado con perfiles de aluminio anodizado. Elegancia y practicidad para tu baño.</p>
-                <a class="card-link" href="#contacto">
-                  Cotizar
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
-                </a>
-              </div>
+            <article class="process-step reveal">
+              <span class="process-number">03</span>
+              <h3>Fabricación a medida</h3>
+              <p>Preparación de piezas y componentes según la configuración final aprobada.</p>
             </article>
-
-            <article class="service-card reveal">
-              <div class="card-image-wrap">
-                <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=700&q=85" alt="Fachada de vidrio corporativa" class="card-img" loading="lazy" />
-                <div class="card-overlay" aria-hidden="true"></div>
-              </div>
-              <div class="card-body">
-                <span class="card-number" aria-hidden="true">04</span>
-                <h3>Fachadas & Cerramientos</h3>
-                <p>Proyectos de fachada integral para edificaciones residenciales y comerciales de alto nivel.</p>
-                <a class="card-link" href="#contacto">
-                  Cotizar
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
-                </a>
-              </div>
+            <article class="process-step reveal">
+              <span class="process-number">04</span>
+              <h3>Instalación y entrega</h3>
+              <p>Montaje, revisión final y validación de los detalles que hacen ver bien el resultado.</p>
             </article>
-
           </div>
         </div>
       </section>
 
-      <!-- ── Proyectos ───────────────────────────── -->
       <section id="proyectos" class="projects" aria-labelledby="projects-title">
-        <div class="projects-inner">
-          <div class="section-header reveal">
-            <span class="section-eyebrow">Portafolio</span>
-            <h2 id="projects-title">Proyectos</h2>
-            <p>Espacios que reflejan nuestra visión del vidrio y el aluminio arquitectónico.</p>
+        <div class="section-frame">
+          <div class="section-header section-header--split reveal">
+            <div>
+              <span class="section-eyebrow">Proyectos</span>
+              <h2 id="projects-title">Menos galería genérica, más ejemplos de cómo cambia un espacio.</h2>
+            </div>
+            <p>
+              Replanteamos el portafolio para que comunique beneficio, contexto y tipo de intervención,
+              no solo una imagen bonita.
+            </p>
           </div>
 
-          <div class="projects-grid">
-
-            <article class="project-item reveal">
-              <div class="project-image-wrap">
-                <img src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=900&q=85" alt="Fachada residencial de vidrio" class="project-img" loading="lazy" />
-                <div class="project-overlay">
-                  <div class="project-info">
-                    <span class="project-type">Residencial</span>
-                    <h3 class="project-name">Casa Mirador</h3>
-                  </div>
-                </div>
+          <div class="projects-showcase">
+            <article class="project-feature reveal">
+              <div class="project-feature-media">
+                <img
+                  src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=1200&q=85"
+                  alt="Vivienda con fachada de vidrio y vista abierta"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-feature-body">
+                <span class="project-type">Proyecto destacado</span>
+                <h3>Vivienda con apertura visual hacia el exterior.</h3>
+                <p>
+                  Una composición de vidrio y aluminio pensada para conectar interiores con paisaje,
+                  mejorar entrada de luz y mantener una lectura exterior más sobria.
+                </p>
+                <ul class="project-notes" role="list">
+                  <li>Mayor conexión interior-exterior</li>
+                  <li>Perfiles con presencia visual controlada</li>
+                  <li>Espacios más iluminados y contemporáneos</li>
+                </ul>
               </div>
             </article>
 
-            <article class="project-item reveal">
-              <div class="project-image-wrap">
-                <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=85" alt="Torre corporativa con fachada de vidrio" class="project-img" loading="lazy" />
-                <div class="project-overlay">
-                  <div class="project-info">
-                    <span class="project-type">Comercial</span>
-                    <h3 class="project-name">Torre Lumen</h3>
-                  </div>
+            <div class="project-grid">
+              <article class="project-card reveal">
+                <div class="project-card-media">
+                  <img
+                    src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=900&q=85"
+                    alt="Terraza integrada con puertas corredizas"
+                    class="project-img"
+                    loading="lazy"
+                  />
                 </div>
-              </div>
-            </article>
-
-            <article class="project-item reveal">
-              <div class="project-image-wrap">
-                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6a8e4161?w=900&q=85" alt="Interior moderno con muros de vidrio" class="project-img" loading="lazy" />
-                <div class="project-overlay">
-                  <div class="project-info">
-                    <span class="project-type">Residencial</span>
-                    <h3 class="project-name">Residencia Ámbar</h3>
-                  </div>
+                <div class="project-card-body">
+                  <span class="project-type">Residencial</span>
+                  <h3>Terraza integrada con puertas corredizas.</h3>
+                  <p>Una solución pensada para ampliar visualmente la zona social y suavizar el paso hacia el exterior.</p>
                 </div>
-              </div>
-            </article>
+              </article>
 
-            <article class="project-item reveal">
-              <div class="project-image-wrap">
-                <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=900&q=85" alt="Cerramiento de vidrio premium" class="project-img" loading="lazy" />
-                <div class="project-overlay">
-                  <div class="project-info">
-                    <span class="project-type">Residencial</span>
-                    <h3 class="project-name">Villa Cristal</h3>
-                  </div>
+              <article class="project-card reveal">
+                <div class="project-card-media">
+                  <img
+                    src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=85"
+                    alt="Fachada comercial moderna en vidrio"
+                    class="project-img"
+                    loading="lazy"
+                  />
                 </div>
-              </div>
-            </article>
-
-            <article class="project-item reveal">
-              <div class="project-image-wrap">
-                <img src="https://images.unsplash.com/photo-1577985043696-8bd54d9c4f9c?w=900&q=85" alt="Edificio moderno con vidrio estructural" class="project-img" loading="lazy" />
-                <div class="project-overlay">
-                  <div class="project-info">
-                    <span class="project-type">Comercial</span>
-                    <h3 class="project-name">Centro Axis</h3>
-                  </div>
+                <div class="project-card-body">
+                  <span class="project-type">Comercial</span>
+                  <h3>Fachada con mayor exposición y orden visual.</h3>
+                  <p>Ideal para negocios que necesitan mostrarse mejor desde la calle y cuidar su imagen de marca.</p>
                 </div>
-              </div>
-            </article>
+              </article>
 
-            <article class="project-item reveal">
-              <div class="project-image-wrap">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=85" alt="Residencia contemporánea con vidrio" class="project-img" loading="lazy" />
-                <div class="project-overlay">
-                  <div class="project-info">
-                    <span class="project-type">Residencial</span>
-                    <h3 class="project-name">Casa Horizonte</h3>
-                  </div>
+              <article class="project-card reveal">
+                <div class="project-card-media">
+                  <img
+                    src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=900&q=85"
+                    alt="Baño con mampara de vidrio minimalista"
+                    class="project-img"
+                    loading="lazy"
+                  />
                 </div>
-              </div>
-            </article>
-
+                <div class="project-card-body">
+                  <span class="project-type">Interior</span>
+                  <h3>Baño con mampara de lectura limpia.</h3>
+                  <p>Un ejemplo de cómo una pieza precisa puede elevar la percepción completa del ambiente.</p>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- ── CTA Final ────────────────────────────── -->
-      <section id="contacto" class="cta-section reveal">
-        <div class="cta-inner">
-          <span class="section-eyebrow">Da el primer paso</span>
-          <h2>¿Listo para transformar tu espacio?</h2>
-          <p>Agenda una visita sin compromiso. Te asesoramos para que cada detalle de vidrio y aluminio sea exactamente como lo imaginaste.</p>
-          <a class="btn btn-gold btn-lg" id="whatsapp-btn" href="#" target="_blank" rel="noopener">
-            Contactar por WhatsApp
-          </a>
+      <section id="contacto" class="cta-section reveal" aria-labelledby="cta-title">
+        <div class="cta-shell">
+          <div class="cta-copy">
+            <span class="section-eyebrow">Contacto</span>
+            <h2 id="cta-title">
+              Cuéntanos qué espacio quieres transformar y te ayudamos a aterrizar la solución.
+            </h2>
+            <p>
+              Si ya tienes fotos, medidas aproximadas o una idea general del resultado que buscas,
+              podemos empezar desde ahí y proponerte el camino más claro.
+            </p>
+          </div>
+
+          <div class="cta-card">
+            <h3>Para cotizar más rápido, comparte:</h3>
+            <ul role="list">
+              <li>Tipo de espacio: baño, terraza, fachada, local o vivienda.</li>
+              <li>Fotos o medidas aproximadas del área.</li>
+              <li>Ciudad, zona o condiciones básicas del proyecto.</li>
+            </ul>
+            <a class="btn btn-gold btn-lg" id="whatsapp-btn" href="#" target="_blank" rel="noopener">
+              Abrir WhatsApp
+            </a>
+            <p class="cta-note">
+              La idea es orientarte mejor desde el primer mensaje, no hacerte perder tiempo.
+            </p>
+          </div>
         </div>
       </section>
-
     </main>
 
-    <!-- ── Footer ───────────────────────────────── -->
     <footer class="site-footer">
       <div class="footer-inner">
         <span class="footer-brand">Silvalum</span>
-        <span class="footer-copy">&copy; 2026 — Vidrio & aluminio arquitectónico</span>
+        <span class="footer-copy">&copy; 2026 — Vidrio &amp; aluminio arquitectónico</span>
       </div>
     </footer>
 
