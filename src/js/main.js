@@ -55,11 +55,19 @@ if (hamburger && navMenu) {
 }
 
 if (header) {
+  const syncHeaderOffset = () => {
+    const headerOffset = header.offsetHeight + 8;
+    document.documentElement.style.setProperty("--header-offset", `${headerOffset}px`);
+  };
+
   const onScroll = () => {
     header.classList.toggle("scrolled", window.scrollY > 24);
   };
 
   window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", syncHeaderOffset);
+  window.addEventListener("load", syncHeaderOffset);
+  syncHeaderOffset();
   onScroll();
 }
 

@@ -26,6 +26,7 @@
 
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
   --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --header-offset: 6.5rem;
 }
 
 *,
@@ -52,6 +53,10 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+}
+
+section[id] {
+  scroll-margin-top: var(--header-offset);
 }
 
 body::before {
